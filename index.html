@@ -6,17 +6,15 @@
 
     <style>
         
-        /* 全体設定 */
         body {
             background: #050505;
             color: #fff;
             font-family: "Segoe UI", sans-serif;
             margin: 0;
             padding: 0;
-            margin-right: 330px; /* サイドバーの分だけ余白 */
+            margin-right: 330px;
         }
-
-        /* 左端ネオン時計 */
+        
         .neon-clock {
             position: fixed;
             top: 20px;
@@ -33,7 +31,6 @@
             z-index: 999999;
         }
 
-        /* ロゴ */
         .logo {
             width: 180px;
             display: block;
@@ -41,7 +38,6 @@
             filter: drop-shadow(0 0 12px rgba(255, 255, 0, 0.4));
         }
 
-        /* ヒーローセクション */
         .hero {
             text-align: center;
             max-width: 900px;
@@ -49,7 +45,6 @@
             padding: 60px 20px;
         }
 
-        /* タイトル虹色 */
         .title {
             font-size: 60px;
             font-weight: bold;
@@ -66,7 +61,6 @@
             100% { text-shadow: 0 0 20px #ff00ff; color: #ff00ff; }
         }
 
-        /* メンバー一覧 */
         .members {
             max-width: 900px;
             margin: auto;
@@ -99,7 +93,6 @@
             color: #ff00f7;
         }
 
-        /* About */
         .about {
             max-width: 900px;
             margin: 40px auto;
@@ -128,7 +121,6 @@
             transform: scale(1.05);
         }
 
-        /* やったこと一覧 */
         .updates {
             max-width: 900px;
             margin: 40px auto;
@@ -156,7 +148,6 @@
             transform: translateY(-5px);
         }
 
-        /* フッター */
         footer {
             text-align: center;
             padding: 20px;
@@ -165,7 +156,6 @@
             margin: auto;
         }
 
-        /* 右側巨大サイドバー */
         .sidebar {
             position: fixed;
             top: 0;
@@ -219,10 +209,8 @@
 </head>
 <body>
 
-    <!-- 左端ネオン時計 -->
     <div class="neon-clock" id="neonClock">00:00:00</div>
 
-    <!-- 右側巨大サイドバー -->
     <div class="sidebar">
         <h3>BNN MENU</h3>
         <ul>
@@ -232,14 +220,12 @@
         </ul>
     </div>
 
-    <!-- ヒーローヘッダー -->
     <header class="hero">
         <img class="logo" src="logo.png" alt="BNNロゴ">
         <h1 class="title">BNN</h1>
         <p>みんな仲よく活動するゲーム集団</p>
     </header>
 
-    <!-- メンバー一覧 -->
     <section class="members" id="members">
         <h2>Team Members</h2>
 
@@ -325,7 +311,6 @@
 
     </section>
 
-    <!-- BNNについて -->
     <section class="about" id="about">
         <h2>BNNについて</h2>
         <p>
@@ -367,7 +352,6 @@
             
     </section>
 
-    <!-- やったこと一覧 -->
     <section class="updates" id="updates">
         <h2>やったこと一覧 / 起きたこと一覧</h2>
 
@@ -392,12 +376,10 @@
       </div>
   </section>
 
-    <!-- フッター -->
     <footer>
         © 2026 BNN Team　オーナー BNN AKI1202
     </footer>
-
-    <!-- 時計スクリプト -->
+            
     <script>
         function updateClock() {
             const clock = document.getElementById("neonClock");
